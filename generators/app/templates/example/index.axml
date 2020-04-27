@@ -1,0 +1,37 @@
+<view>
+    <pintu ref="pintuRef" onGameOver="onGameOver" backgroundImage="{{form.backgroundImage}}" width="{{form.width}}" height="{{form.height}}" level="{{form.level}}"/>
+    <form onSubmit="onSubmit">
+        <view class="form-row">
+            <view class="form-row-label">宽度:</view>
+            <view class="form-row-content">
+                <input name="width" class="input" placeholder="输入宽度" value="{{form.width}}"/>
+            </view>
+        </view>
+        <view class="form-row">
+            <view class="form-row-label">高度:</view>
+            <view class="form-row-content">
+                <input name="height" class="input" placeholder="输入高度" value="{{form.height}}"/>
+            </view>
+        </view>
+        <view class="form-row">
+            <view class="form-row-label">难度:</view>
+            <view class="form-row-content">
+                <input name="level" class="input" placeholder="输入难度" value="{{form.level}}"/>
+            </view>
+        </view>
+   
+        <view class="form-row">
+            <view class="form-row-label">背景图片:</view>
+            <view class="page-section-demo">
+                <radio-group value="{{form.backgroundImage}}" name="backgroundImage">
+                    <label a:for="{{backgroundImageList}}" key="{{item.value}}">
+                        <radio value="{{item.value}}" checked="{{item.checked}}" />图片1
+                    </label>
+                </radio-group>
+            </view>
+        </view>
+       
+        <button type="primary"  formType="submit">设置</button>
+    
+    </form>
+</view>

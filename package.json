@@ -2,12 +2,8 @@
   "name": "generator-taobao-component",
   "version": "0.0.0",
   "description": "a generator for taobao component",
-  "homepage": "",
-  "author": {
-    "name": "Simon-Bin",
-    "email": "2632003786@qq.com",
-    "url": ""
-  },
+  "homepage": "https://github.com/Simon-Bin/generator-tb-component#readme",
+  "author": "Simon-Bin <2632003786@qq.com>",
   "files": [
     "generators"
   ],
@@ -30,7 +26,7 @@
     "jest": "^24.8.0"
   },
   "engines": {
-    "npm": ">= 4.0.0"
+    "npm": ">= 8.0.0"
   },
   "dependencies": {
     "yeoman-generator": "^2.0.1",
@@ -75,6 +71,12 @@
     "pretest": "eslint .",
     "test": "jest"
   },
-  "repository": "https://github.com/Simon-Bin/generator-tb-component.git",
-  "license": "MIT"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Simon-Bin/generator-tb-component.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Simon-Bin/generator-tb-component/issues"
+  }
 }

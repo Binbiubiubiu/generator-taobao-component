@@ -1,0 +1,5 @@
+<import-sjs name="domUtils" from="./utils/dom.sjs"/>
+<view class="pintu-grid" style="width:{{domUtils.px(width)}};height:{{domUtils.px(height)}};">
+  <view a:for="{{map}}" key="{{`${index}`}}" catchTap="handleItemTap" data-idx="{{`${index}`}}" style="{{domUtils.computedStyle(level,index,item,backgroundImage)}}" class="pintu-item  active">
+  </view>
+</view>

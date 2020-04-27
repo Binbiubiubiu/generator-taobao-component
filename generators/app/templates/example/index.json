@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "pintu": "../src/index"
+  }
+}

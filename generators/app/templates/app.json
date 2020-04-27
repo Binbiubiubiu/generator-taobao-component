@@ -1,0 +1,8 @@
+{
+  "pages": [
+    "example/index"
+  ],
+  "window": {
+    "defaultTitle": "拼图游戏"
+  }
+}

@@ -1,0 +1,16 @@
+/* required by usingComponents */
+.form-row{
+    display: flex;
+    align-items: center;
+    height:40px;
+}
+
+.form-row-label{
+    flex: 0 0 80px;
+    text-align: right;
+    padding-right:10px;
+}
+
+.form-row .input{
+    border-bottom: 1px solid #ccc;
+}

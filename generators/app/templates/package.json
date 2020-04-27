@@ -1,0 +1,28 @@
+{
+  "name": "taobao-component-template",
+  "version": "1.0.0",
+  "author": "",
+  "description": "",
+  "scripts": {
+    "build": "father build",
+    "test": "father test",
+    "test:cover": "father test --coverage",
+    "prepublishOnly": "npm run build && np --no-cleanup --yolo --no-publish"
+  },
+  "files": [
+    "es"
+  ],
+  "keywords": [
+    "taobao",
+    "custom-component",
+    "mini-program"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "father": "2.29.3"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  }
+}
