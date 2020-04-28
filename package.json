@@ -77,7 +77,7 @@
   "scripts": {
     "pretest": "eslint .",
     "test": "jest",
-    "test:cover": "jest --coverage && coveralls < coverage/lcov.info ",
+    "test:cover": "jest --coverage",
     "cz": "git cz",
     "release": "standard-version",
     "github-release": "conventional-github-releaser -p angular"
