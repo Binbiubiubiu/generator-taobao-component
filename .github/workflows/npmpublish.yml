@@ -50,7 +50,7 @@ jobs:
 
   publish-npm:
 #     if:  job.check-tag.outputs.match == 'true'
-    needs: check-tag
+    needs: test
     runs-on: ubuntu-latest
     steps:
       - name: Checkout branch
