@@ -14,5 +14,10 @@ describe("generator-taobao-component:app", () => {
 
   it("creates files", () => {
     assert.file(["test"]);
+    assert.jsonFileContent("test/package.json", {
+      name: "test",
+      author: "Simon-Bin",
+      description: "description"
+    });
   });
 });

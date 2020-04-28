@@ -45,17 +45,19 @@ module.exports = class extends Generator {
   }
 
   writing() {
-    const destDir =
-      path.basename(process.cwd()) === this.props.name ? "" : this.props.name;
+    const { name, author, description } = this.props;
+    const destDir = path.basename(process.cwd()) === name ? "" : name;
     this.fs.copyTpl(this.templatePath(), this.destinationPath(destDir));
     this.fs.extendJSON(this.destinationPath(destDir, "package.json"), {
-      name: this.props.name,
-      author: this.props.author,
-      description: this.props.description
+      name,
+      author,
+      description
     });
   }
 
   install() {
-    this.npmInstall(["father"], { "save-dev": true });
+    this.npmInstall(["father"], {
+      "save-dev": true
+    });
   }
 };
