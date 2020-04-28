@@ -37,19 +37,19 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           parallel-finished: true
           
-  check-tag:
-    needs: [test]
-    name: check-tag
-    runs-on: ubuntu-latest
-    steps:
-      - name: Check Tag
-        run: |
-          if [[ ${{ github.event.ref }} =~ ^refs/tags/v[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
-              echo ::set-output name=match::true
-          fi
+#   check-tag:
+#     needs: [test]
+#     name: check-tag
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Check Tag
+#         run: |
+#           if [[ ${{ github.event.ref }} =~ ^refs/tags/v[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+#               echo ::set-output name=match::true
+#           fi
 
   publish-npm:
-    if:  job.check-tag.outputs.match == 'true'
+#     if:  job.check-tag.outputs.match == 'true'
     needs: check-tag
     runs-on: ubuntu-latest
     steps:
