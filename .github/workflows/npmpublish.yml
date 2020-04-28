@@ -39,17 +39,17 @@ jobs:
           
   check-tag:
     needs: [test]
+    name: check-tag
     runs-on: ubuntu-latest
     steps:
       - name: Check Tag
-        id: check-tag
         run: |
           if [[ ${{ github.event.ref }} =~ ^refs/tags/v[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
               echo ::set-output name=match::true
           fi
 
   publish-npm:
-    if: steps.check-tag.outputs.match == 'true'
+    if: job.check-tag.outputs.match == 'true'
     needs: check-tag
     runs-on: ubuntu-latest
     steps:
