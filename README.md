@@ -1,5 +1,9 @@
-# generator-taobao-component [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
+# generator-taobao-component
 
+[![NPM version][npm-image]][npm-url]
+[![Build Status][gitactions-image]][gitactions-url]
+[![Dependency Status][daviddm-image]][daviddm-url]
+[![Coverage percentage][coveralls-image]][coveralls-url]
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
 > a generator for taobao component
@@ -32,8 +36,8 @@ MIT © [Simon-Bin]()
 
 [npm-image]: https://badge.fury.io/js/generator-taobao-component.svg
 [npm-url]: https://npmjs.org/package/generator-taobao-component
-[travis-image]: https://travis-ci.com/Simon-Bin/generator-taobao-component.svg?branch=master
-[travis-url]: https://travis-ci.com/Simon-Bin/generator-taobao-component
+[gitactions-image]: https://github.com/Simon-Bin/generator-taobao-component/workflows/Node.js%20Package/badge.svg
+[gitactions-url]: https://travis-ci.com/Simon-Bin/generator-taobao-component
 [daviddm-image]: https://david-dm.org/Simon-Bin/generator-taobao-component.svg?theme=shields.io
 [daviddm-url]: https://david-dm.org/Simon-Bin/generator-taobao-component
 [coveralls-image]: https://coveralls.io/repos/Simon-Bin/generator-taobao-component/badge.svg
