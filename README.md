@@ -37,7 +37,7 @@ MIT © [Simon-Bin]()
 [npm-image]: https://badge.fury.io/js/generator-taobao-component.svg
 [npm-url]: https://npmjs.org/package/generator-taobao-component
 [gitactions-image]: https://github.com/Simon-Bin/generator-taobao-component/workflows/build/badge.svg
-[gitactions-url]: https://travis-ci.com/Simon-Bin/generator-taobao-component
+[gitactions-url]: https://github.com/Simon-Bin/generator-taobao-component
 [daviddm-image]: https://david-dm.org/Simon-Bin/generator-taobao-component.svg?theme=shields.io
 [daviddm-url]: https://david-dm.org/Simon-Bin/generator-taobao-component
 [coveralls-image]: https://coveralls.io/repos/Simon-Bin/generator-taobao-component/badge.svg
